@@ -1,0 +1,105 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/merriweather";
+@import "@fontsource-variable/geist";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 9%;
+        --primary: 199, 86%, 46%;
+        --primary-foreground: 226 100% 97%;
+        --secondary: 240 5% 96%;
+        --secondary-foreground: 240 4% 22%;
+        --muted: 0 0% 97%;
+        --muted-foreground: 0 0% 45%;
+        --accent: 0 0% 97%;
+        --accent-foreground: 0 0% 13%;
+        --destructive: 14 86% 44%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 91%;
+        --input: 0 0% 91%;
+        --ring: 0 0% 63%;
+        --radius: 0.625rem;
+        --chart-1: 191 52% 60%;
+        --chart-2: 199 45% 47%;
+        --chart-3: 204 37% 41%;
+        --chart-4: 207 32% 35%;
+        --chart-5: 209 28% 30%;
+        --sidebar-background: 0 0% 98%;
+        --sidebar-foreground: 0 0% 9%;
+        --sidebar-primary: 232 68% 50%;
+        --sidebar-primary-foreground: 226 100% 97%;
+        --sidebar-accent: 0 0% 97%;
+        --sidebar-accent-foreground: 0 0% 13%;
+        --sidebar-border: 0 0% 91%;
+        --sidebar-ring: 0 0% 63%;
+        --sidebar: 0 0% 98%;
+    }
+    .dark {
+        --background: 0 0% 9%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 13%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 13%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 233 52% 37%;
+        --primary-foreground: 226 100% 97%;
+        --secondary: 240 3% 27%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 0 0% 26%;
+        --muted-foreground: 0 0% 63%;
+        --accent: 0 0% 26%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 11 72% 56%;
+        --destructive-foreground: 0 85.7% 97.3%;
+        --border: 0 0% 100% / 10%;
+        --input: 0 0% 100% / 15%;
+        --ring: 0 0% 45%;
+        --chart-1: 191 52% 60%;
+        --chart-2: 199 45% 47%;
+        --chart-3: 204 37% 41%;
+        --chart-4: 207 32% 35%;
+        --chart-5: 209 28% 30%;
+        --sidebar-background: 240 5.9% 10%;
+        --sidebar-foreground: 0 0% 98%;
+        --sidebar-primary: 226 60% 55%;
+        --sidebar-primary-foreground: 226 100% 97%;
+        --sidebar-accent: 0 0% 26%;
+        --sidebar-accent-foreground: 0 0% 98%;
+        --sidebar-border: 0 0% 100% / 10%;
+        --sidebar-ring: 0 0% 45%;
+        --sidebar: 0 0% 13%;
+    }
+    .theme {
+        --font-serif: "Merriweather Variable", serif;
+        --font-heading: "Geist Variable", sans-serif;
+    }
+    * {
+        @apply border-border outline-ring/50;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
+    html {
+        @apply font-serif;
+    }
+}
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
